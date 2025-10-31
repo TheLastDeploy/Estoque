@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaryCario | Especializada em Perfumes e Cremes</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+  <%- include('C:/SENAI/Estoque/estoque/Estoque/Views/Includes/header'); %> 
+
+  <main>
+    
+    <div class="landing-1">
+      
+      <div class="logo-hero">
+        <img src="/IMG/logo.png" alt="Logo MaryCario">
+      </div>
+      <div class="texto-1">
+        Conheça a número um em vendas de cosméticos, especializada em perfumes e cremes.
+      </div>
+      
+      <div class="sobre-nos-container"> 
+          <div class="sobre-nos-texto">
+              <h2 class="titulo">Sobre Nós</h2>
+              <div class="descrição">
+                Na MaryCario, transformamos a beleza em uma experiência pessoal. Nossos perfumes e cosméticos são feitos com ingredientes de alta qualidade para realçar sua essência e celebrar sua individualidade. Somos mais que uma marca; somos seu parceiro na jornada de autodescoberta.
+              </div>
+          </div>
+          <div class="imagem-inicial">
+            <img src="/img/Perfume-1.jpg" alt="Perfume Destaque MaryCario"> 
+          </div>
+      </div>
+    </div>
+
+    <div class="produtos-section">
+      <h2 class="section-title">Nossos Produtos</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="/img/Perfume-2.png" alt="Bleu de Chanel">
+        </div>
+        <div class="product-item">
+          <img src="/img/Perfume-3.png" alt="Nº5 Chanel">
+        </div>
+        <div class="product-item">
+          <img src="/img/Perfume-4.png" alt="Coco Noir Chanel">
+        </div>
+        <div class="product-item">
+          <img src="/img/Perfume-5.png" alt="Perfume Dourado">
+        </div>
+      </div>
+    </div>
+
+    <div class="contato-section">
+      <h2 class="section-title">Entre em contato</h2>
+      <form class="contact-form">
+          <div class="form-group-inline">
+              <input type="text" id="nome" name="nome" placeholder="Seu nome:">
+              <input type="email" id="email" name="email" placeholder="E-mail:">
+          </div>
+          <textarea id="mensagem" name="mensagem" placeholder="Mensagem:"></textarea>
+          <button type="submit" class="btn-submit">Enviar Mensagem</button>
+      </form>
+    </div>
+    
+  </main>
+
+  <%- include('C:/SENAI/Estoque/estoque/Estoque/Views/Includes/footer'); %>
+
+</body>
+</html>

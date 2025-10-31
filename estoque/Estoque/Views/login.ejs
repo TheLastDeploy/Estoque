@@ -1,0 +1,41 @@
+<%# Arquivo: views/login.ejs %>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | MaryCario</title>
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body class="fundo-login">
+
+    <main class="container-login">
+
+        <div class="header-login">
+            <div class="logo-pequena">
+                <img src="/IMG/logo.png" alt="Logo M"> 
+            </div>
+            <a href="/" class="botao-voltar">Voltar</a>
+        </div>
+        
+        <div class="conteudo-centralizado">
+            
+            <div class="logo-grande">
+                <img src="/IMG/logo.png" alt="Logo MaryCario">
+            </div>
+
+            <h2 class="titulo-login">Entre em sua conta</h2>
+
+            <form class="formulario-login" action="/login" method="POST">
+                
+                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+                <button type="submit" class="botao-entrar-login">Entrar</button>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
